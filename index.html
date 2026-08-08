@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pannu Rasoi - शुद्ध स्वाद, घर का भरोसा</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🍲 Pannu Rasoi
+    </div>
+
+    <nav>
+        <a href="#">होम</a>
+        <a href="#products">प्रोडक्ट्स</a>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#contact">संपर्क करें</a>
+    </nav>
+
+    <div class="cart">
+        🛒 कार्ट
+        <span id="cart-count">0</span>
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            स्वाद भी, शुद्धता भी ❤️
+        </h1>
+
+        <p>
+            Pannu Rasoi लेकर आया है आपके लिए
+            शुद्ध और स्वादिष्ट भारतीय मसाले,
+            सरसों का तेल और देसी घी।
+        </p>
+
+        <a href="#products" class="btn">
+            अभी खरीदें 🛍️
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products" class="products-section">
+
+    <h2>हमारे प्रोडक्ट्स</h2>
+
+    <p class="section-text">
+        500 GR और 1 KG पैक उपलब्ध
+    </p>
+
+
+    <div class="products">
+
+
+        <!-- 1. MUSTARD OIL -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/mustard-oil-500gr.png"
+                    alt="Pannu Rasoi सरसों का तेल"
+                >
+
+            </div>
+
+            <h3>सरसों का तेल</h3>
+
+            <p>
+                शुद्ध और स्वादिष्ट सरसों का तेल
+            </p>
+
+            <div class="weight">
+                पैक साइज
+            </div>
+
+            <select class="size-select">
+
+                <option value="110" data-weight="500 GR">
+                    500 GR - ₹110
+                </option>
+
+                <option value="199" data-weight="1 KG">
+                    1 KG - ₹199
+                </option>
+
+            </select>
+
+            <h4 class="product-price">
+                ₹110
+            </h4>
+
+            <button onclick="addToCart()">
+                🛒 कार्ट में डालें
+            </button>
+
+        </div>
+
+
+        <!-- 2. CORIANDER -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/coriander-powder-500gr.png"
+                    alt="Pannu Rasoi धनिया पाउडर"
+                >
+
+            </div>
+
+            <h3>धनिया पाउडर</h3>
+
+            <p>
+                ताज़ा और खुशबूदार धनिया पाउडर
+            </p>
+
+            <div class="weight">
+                पैक साइज
+            </div>
+
+            <select class="size-select">
+
+                <option value="149" data-weight="500 GR">
+                    500 GR - ₹149
+                </option>
+
+                <option value="299" data-weight="1 KG">
+                    1 KG - ₹299
+                </option>
+
+            </select>
+
+            <h4 class="product-price">
+                ₹149
+            </h4>
+
+            <button onclick="addToCart()">
+                🛒 कार्ट में डालें
+            </button>
+
+        </div>
+
+
+        <!-- 3. TURMERIC -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/turmeric-powder-500gr.png"
+                    alt="Pannu Rasoi हल्दी पाउडर"
+                >
+
+            </div>
+
+            <h3>हल्दी पाउडर</h3>
+
+            <p>
+                शुद्ध और प्राकृतिक हल्दी
+            </p>
+
+            <div class="weight">
+                पैक साइज
+            </div>
+
+            <select class="size-select">
+
+                <option value="140" data-weight="500 GR">
+                    500 GR - ₹140
+                </option>
+
+                <option value="270" data-weight="1 KG">
+                    1 KG - ₹270
+                </option>
+
+            </select>
+
+            <h4 class="product-price">
+                ₹140
+            </h4>
+
+            <button onclick="addToCart()">
+                🛒 कार्ट में डालें
+            </button>
+
+        </div>
+
+
+        <!-- 4. RED CHILLI -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/red-chilli-powder-500gr.png"
+                    alt="Pannu Rasoi लाल मिर्च पाउडर"
+                >
+
+            </div>
+
+            <h3>लाल मिर्च पाउडर</h3>
+
+            <p>
+                स्वाद और रंग से भरपूर लाल मिर्च
+            </p>
+
+            <div class="weight">
+                पैक साइज
+            </div>
+
+            <select class="size-select">
+
+                <option value="150" data-weight="500 GR">
+                    500 GR - ₹150
+                </option>
+
+                <option value="299" data-weight="1 KG">
+                    1 KG - ₹299
+                </option>
+
+            </select>
+
+            <h4 class="product-price">
+                ₹150
+            </h4>
+
+            <button onclick="addToCart()">
+                🛒 कार्ट में डालें
+            </button>
+
+        </div>
+
+
+        <!-- 5. GARAM MASALA -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/garam-masala-500gr.png"
+                    alt="Pannu Rasoi गरम मसाला"
+                >
+
+            </div>
+
+            <h3>गरम मसाला</h3>
+
+            <p>
+                खाने के स्वाद को बनाए खास
+            </p>
+
+            <div class="weight">
+                पैक साइज
+            </div>
+
+            <select class="size-select">
+
+                <option value="199" data-weight="500 GR">
+                    500 GR - ₹199
+                </option>
+
+                <option value="399" data-weight="1 KG">
+                    1 KG - ₹399
+                </option>
+
+            </select>
+
+            <h4 class="product-price">
+                ₹199
+            </h4>
+
+            <button onclick="addToCart()">
+                🛒 कार्ट में डालें
+            </button>
+
+        </div>
+
+
+        <!-- 6. DESI GHEE -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/desi-ghee-500gr.png"
+                    alt="Pannu Rasoi देसी घी"
+                >
+
+            </div>
+
+            <h3>देसी घी</h3>
+
+            <p>
+                शुद्ध और स्वादिष्ट देसी घी
+            </p>
+
+            <div class="weight">
+                पैक साइज
+            </div>
+
+            <select class="size-select">
+
+                <option value="399" data-weight="500 GR">
+                    500 GR - ₹399
+                </option>
+
+                <option value="799" data-weight="1 KG">
+                    1 KG - ₹799
+                </option>
+
+            </select>
+
+            <h4 class="product-price">
+                ₹399
+            </h4>
+
+            <button onclick="addToCart()">
+                🛒 कार्ट में डालें
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+    <h2>Pannu Rasoi के बारे में</h2>
+
+    <p>
+        Pannu Rasoi का उद्देश्य आपके घर तक
+        शुद्ध, स्वादिष्ट और भरोसेमंद खाद्य उत्पाद
+        पहुँचाना है।
+        हमारे प्रोडक्ट आपकी रसोई के स्वाद को
+        और भी खास बनाने के लिए हैं।
+    </p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <h2>हमसे संपर्क करें</h2>
+
+    <p>
+        ऑर्डर या जानकारी के लिए हमसे संपर्क करें।
+    </p>
+
+    <button onclick="openCart()">
+        📱 अपना ऑर्डर देखें
+    </button>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Pannu Rasoi. सभी अधिकार सुरक्षित।
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
