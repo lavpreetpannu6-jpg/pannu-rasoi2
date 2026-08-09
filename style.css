@@ -88,15 +88,24 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding: 70px 8%;
+
     background:
         linear-gradient(
-            135deg,
-            #111111 0%,
-            #1b1b1b 55%,
-            #292929 100%
-        );
+            90deg,
+            rgba(17, 17, 17, 1) 0%,
+            rgba(17, 17, 17, 0.92) 35%,
+            rgba(17, 17, 17, 0.35) 70%,
+            rgba(17, 17, 17, 0.05) 100%
+        ),
+       url("images/hero-kitchen.png.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+
     position: relative;
     overflow: hidden;
+}
 }
 
 /* Gold decorative circle */
