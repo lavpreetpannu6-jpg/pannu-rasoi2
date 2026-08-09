@@ -494,10 +494,20 @@ function sendWhatsAppOrder() {
 
     });
 
+const deliveryCharge = total >= 500 ? 0 : 50;
 
-    message +=
-        `कुल ऑर्डर: ₹${total}\n\n`;
+const grandTotal = total + deliveryCharge;
 
+message +=
+    `सामान का कुल: ₹${total}\n`;
+
+message +=
+    deliveryCharge === 0
+        ? "डिलीवरी: FREE 🎉\n"
+        : `डिलीवरी चार्ज: ₹${deliveryCharge}\n`;
+
+message +=
+    `कुल भुगतान: ₹${grandTotal}\n\n`;
 
     message +=
         "ग्राहक की जानकारी:\n";
